@@ -24,10 +24,10 @@ WEBRTC_CLIENT_SETTINGS = ClientSettings(
 
 # importing the model
 faceCascade = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
-model =load_model(r'model.h5')
+model =load_model(r'fruitmodel1.h5')
 
 #emotions
-emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
+emotion_labels = ['freshbanana','rottenbanana']
 
 
 # emotion prediction 
