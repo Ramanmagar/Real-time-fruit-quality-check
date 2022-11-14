@@ -12,18 +12,18 @@ from tensorflow.keras.preprocessing.image import img_to_array
 
 # loading the model files
 fc = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
-model =load_model(r'.model.h5')
+model =load_model(r'.fruitmodel1.h5')
 
 #emotion list
-emotions = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
+emotions = ['freshbanana','rottenbanana']
 
 #capture video from webcam
-cap = cv2.VideoCapture(0)                                                       
+cap = cv2.VideoCapture(0)                                                    
 
 #emotion prediction
 while True:
     _, frame = cap.read()
-    gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)                               
+    gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)                         
     faces = fc.detectMultiScale(gray)                              
 
     for (x,y,w,h) in faces:
