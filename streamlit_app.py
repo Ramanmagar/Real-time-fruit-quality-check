@@ -23,7 +23,7 @@ WEBRTC_CLIENT_SETTINGS = ClientSettings(
 )
 
 # importing the model
-faceCascade = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
+faceCascade = cv2.CascadeClassifier(r'cascade for banana Fruit.xml')
 model =load_model(r'fruitmodel1.h5')
 
 #emotions
