@@ -11,7 +11,7 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.preprocessing.image import img_to_array
 
 # loading the model files
-fc = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
+fc = cv2.CascadeClassifier(r'cascade for banana Fruit.xml')
 model =load_model(r'.fruitmodel1.h5')
 
 #emotion list
