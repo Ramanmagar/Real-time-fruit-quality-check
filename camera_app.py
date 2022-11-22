@@ -12,7 +12,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 
 # loading the model files
 fc = cv2.CascadeClassifier(r'cascade detection fruit.xml')
-model =load_model(r'.Fruitmodel new.h5')
+model =load_model(r'.Fruitmodel.h5')
 
 #emotion list
 emotions = ['freshbanana','rottenbanana']
