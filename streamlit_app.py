@@ -33,7 +33,7 @@ emotion_labels = ['freshbanana','rottenbanana']
 
 # emotion prediction 
 #class VideoTransformer(VideoTransformerBase):
-  class video_processor_factory(VideoTransformerBase):
+  class Video_processor_factory(VideoTransformerBase):
     def transform(self, frame):
         img = frame.to_ndarray(format="bgr24")
         gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
