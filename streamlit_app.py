@@ -38,7 +38,7 @@ class VideoTransformer(VideoTransformerBase):
         gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
         faces = faceCascade.detectMultiScale(gray)
         #if len(faces)==0:
-        if faces is ():
+        if faces==0:
             print("no faces detected")
 
         for (x,y,w,h) in faces:
