@@ -9,6 +9,9 @@ import numpy as np
 import streamlit as st
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
+pip install h5py
+pip install typing-extensions
+pip install wheel
 from streamlit_webrtc import (
     ClientSettings,
     VideoTransformerBase,
