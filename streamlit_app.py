@@ -61,6 +61,7 @@ webrtc_streamer(
         #client_settings=WEBRTC_CLIENT_SETTINGS,
     
         rtc_configuration=WEBRTC_CLIENT_SETTINGS,
+        media_stream_constraints=WEBRTC_CLIENT_SETTINGS,
         #video_transformer_factory=VideoTransformer,
     
         video_processor_factory=VideoTransformer,
