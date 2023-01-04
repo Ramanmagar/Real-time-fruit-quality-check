@@ -9,6 +9,8 @@ import numpy as np
 import streamlit as st
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
+import streamlit.report_thread as ReportThread
+from .session_info import get_this_session_info
 from streamlit_webrtc import (
     ClientSettings,
     VideoTransformerBase,
