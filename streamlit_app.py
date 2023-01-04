@@ -36,8 +36,8 @@ class VideoTransformer(VideoTransformerBase):
         img = frame.to_ndarray(format="bgr24")
         gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
         faces = faceCascade.detectMultiScale(gray)
-        #if faces is ():
-        #    print("no faces detected")
+        if faces is ():
+            print("no faces detected")
 
         for (x,y,w,h) in faces:
             cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,255),3)
