@@ -60,7 +60,8 @@ webrtc_streamer(
         client_settings=WEBRTC_CLIENT_SETTINGS,
         #video_transformer_factory=VideoTransformer,
         video_processor_factory=VideoTransformer,
-        async_transform=True,
+        #async_transform=True,
+        async_processing=True
     )
        
 
