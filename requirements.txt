@@ -1,4 +1,3 @@
-pipx
 numpy==1.21.5
 opencv_python_headless
 streamlit==1.16.0
