@@ -58,10 +58,10 @@ webrtc_streamer(
         key="emotion-detection",
         mode=WebRtcMode.SENDRECV,
         client_settings=WEBRTC_CLIENT_SETTINGS,
-        #video_transformer_factory=VideoTransformer,
-        video_processor_factory=VideoTransformer,
-        #async_transform=True,
-        async_processing=True
+        video_transformer_factory=VideoTransformer,
+        #video_processor_factory=VideoTransformer,
+        async_transform=True,
+        #async_processing=True
     )
         
 
